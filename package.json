@@ -2,8 +2,12 @@
   "name": "bmax-emacs",
   "displayName": "bmax-emacs",
   "description": "An Emacs inspired keymap for vscode on MacOS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Bhanuka",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bhanukamax/bmax-emacs-vsc"
+  },
   "engines": {
     "vscode": "^1.98.0"
   },

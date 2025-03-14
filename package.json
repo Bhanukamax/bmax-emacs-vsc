@@ -17,6 +17,26 @@
   "contributes": {
     "keybindings": [
       {
+        "key": "ctrl+e",
+        "command": "cursorLineEnd",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+e",
+        "command": "cursorLineEndSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+a",
+        "command": "cursorLineStart",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+a",
+        "command": "cursorLineStartSelect",
+        "when": "textInputFocus"
+      },
+      {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
       },
@@ -101,12 +121,12 @@
         "when": "textInputFocus && !editorReadonly"
       },
       {
-        "key": "alt+m",
+        "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
       },
       {
-        "key": "alt+p",
+        "key": "alt+k",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
       },
@@ -166,8 +186,23 @@
         "command": "execPaste"
       },
       {
-        "key": "ctrl+cmd+k",
+        "key": "shift+ctrl+k",
         "command": "editor.action.showDefinitionPreviewHover"
+      },
+      {
+        "key": "shift+ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+alt+j",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+alt+k",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "name": "bmax-emacs",
   "displayName": "bmax-emacs",
-  "description": "An Emacs inspired keymap for vscode on MacOS",
+  "description": "An Emacs inspired keymap for vscode",
   "version": "0.0.2",
   "publisher": "Bhanuka",
   "repository": {

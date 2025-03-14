@@ -1,0 +1,170 @@
+{
+  "name": "bmax-emacs",
+  "displayName": "bmax-emacs",
+  "description": "An Emacs inspired keymap for vscode on MacOS",
+  "version": "0.0.1",
+  "publisher": "Bhanuka",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+      },
+      {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.nextEditor"
+      },
+      {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+      },
+      {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.previousEditor"
+      },
+      {
+        "key": "alt+h",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+/",
+        "command": "undo"
+      },
+      {
+        "key": "ctrl+shift+/",
+        "command": "redo"
+      },
+      {
+        "key": "alt+f",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+alt+f",
+        "command": "cursorWordEndRightSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+b",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+alt+b",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+alt+b",
+        "command": "cursorWordPartLeft",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+alt+b",
+        "command": "cursorWordPartLeftSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+alt+f",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+alt+f",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+w",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+d",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+m",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+p",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+      },
+      {
+        "key": "shift+ctrl+tab",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+      },
+      {
+        "key": "shift+ctrl+a",
+        "command": "cursorHomeSelect"
+      },
+      {
+        "key": "shift+ctrl+e",
+        "command": "cursorEndSelect"
+      },
+      {
+        "key": "alt+v",
+        "command": "cursorPageDown",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+alt+v",
+        "command": "cursorPageUp",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+g alt+g",
+        "command": "workbench.action.gotoLine"
+      },
+      {
+        "key": "shift+ctrl+n",
+        "command": "cursorDownSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+ctrl+p",
+        "command": "cursorUpSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "Ctrl+c Ctrl+n",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+w",
+        "command": "execCopy"
+      },
+      {
+        "key": "ctrl+y",
+        "command": "execPaste"
+      },
+      {
+        "key": "ctrl+cmd+k",
+        "command": "editor.action.showDefinitionPreviewHover"
+      }
+    ]
+  }
+}
